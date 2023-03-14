@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}liste des articles{% endblock %}
+
+{% block body %}
+liste_article
+{% for article in liste_articles %}
+{{article.id}}
+{{article.titre}}
+{{article.discription}}
+{% endfor %}
+
+<br>
+
+{# <a href="{{ path('route_new') }}">Create new</a> #}
+
+
+{% endblock %}

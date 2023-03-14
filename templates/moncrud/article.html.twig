@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}article{% endblock %}
+
+{% block body %}
+
+article
+
+{% mon_article in articles %}
+{{article.id}}
+{{article.titre}}
+{{article.discription}}
+
+
+
+{% endblock %}
+
+
+
+
